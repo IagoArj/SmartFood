@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import Header from '../Components/Header/Header';
+
+import RecipeCard from '../Components/RecipeCard/Recipe';
 class Home extends Component {
     state = {}
     render() {
         return (
-            <div>
+            <div  >
                 <h1>Home</h1>
+                <RecipeCard/>
+                
             </div>
 
         );

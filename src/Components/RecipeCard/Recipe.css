@@ -1,0 +1,37 @@
+.teste {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.teste1 {
+    width: 250px;
+    height: 200px;
+    background-color: black;
+}
+
+.teste2 {
+    width: 0;
+    height: 200px;
+    background-color: gray;
+    transition: width 0.2s ease-in-out;
+}
+.card-information{
+    width: 0;
+    opacity: 0;
+    height: 200px;
+    transition: width 0.3s 0.5s , opacity 0.2s 0.2s;
+    
+}
+.teste:hover>.teste2 {
+    opacity: 1;
+    width: 250px;
+    height: 200px;
+    
+
+}
+
+.teste:hover>.teste2>.card-information {
+    width: auto;
+    opacity: 1;
+}
