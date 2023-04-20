@@ -1,0 +1,17 @@
+.button-recipe-box{
+    padding: 5px 20px 5px 20px;
+    background-color:#2BAE68 ;
+    width: fit-content;
+    border-radius: 2px;
+}
+.button-recipe-text{
+    padding: 0;
+    margin: 0;
+    font-family: 'Do Hyeon';
+    color: #fff;
+    
+}
+.button-recipe-box:hover{
+    background-color:#023F2D ;
+    cursor: pointer;
+}

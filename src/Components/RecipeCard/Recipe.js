@@ -1,19 +1,26 @@
 import React, { Component } from 'react';
+import ButtonRecipeCard from '../Buttons/buttonRecipeCard/buttonRecipeCard';
 import './Recipe.css'
 class RecipeCard extends Component {
 
     render() {
         return (
-            <div className='teste'>
-                <div className='teste1'></div>
-                <div className='teste2'>
+            <div className='recipe-box'>
+                <div className='recipe-image'></div>
+                <div className='card-information-box'>
                     <div className='card-information'>
-                        <h1>teste meu parceirinhos</h1>
+                        <p className='recipe-card-title'>Macarronada Irada</p>
                         <h2>testes e mais testes</h2>
+                        <ButtonRecipeCard title = "Read More"  />
                     </div>
+                   
                 </div>
             </div>
             
+            
+
+
+
         );
     }
 }

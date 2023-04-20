@@ -1,29 +1,33 @@
-.teste {
+.recipe-box {
     display: flex;
     flex-direction: row;
     width: fit-content;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    margin-right: 30px;
 }
 
-.teste1 {
+.recipe-image {
     width: 250px;
     height: 200px;
     background-color: black;
 }
 
-.teste2 {
+.card-information-box {
     width: 0;
     height: 200px;
-    background-color: gray;
+    background-color: #fff;
     transition: width 0.2s ease-in-out;
+    
 }
 .card-information{
     width: 0;
     opacity: 0;
     height: 200px;
-    transition: width 0.3s 0.5s , opacity 0.2s 0.2s;
+    padding-left: 15px;
+    
     
 }
-.teste:hover>.teste2 {
+.recipe-box:hover>.card-information-box {
     opacity: 1;
     width: 250px;
     height: 200px;
@@ -31,7 +35,31 @@
 
 }
 
-.teste:hover>.teste2>.card-information {
+.recipe-box:hover>.card-information-box>.card-information {
     width: auto;
     opacity: 1;
+    transition: opacity 0.5s 0.2s;
+    
+
+    
 }
+
+.recipe-card-title{
+  margin: 15px 0 0 0;
+  font-family: 'Do Hyeon';
+  color: #023F2D;
+  font-size: 22px;
+}
+
+
+
+.elemento {
+  background-color: red;
+  transition: background-color 1s;
+}
+
+.elemento:hover {
+  background-color: blue;
+  transition-delay: 1s;
+}
+
