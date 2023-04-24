@@ -9,7 +9,10 @@
 .recipe-image {
     width: 250px;
     height: 200px;
-    background-color: black;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-information-box {
@@ -61,5 +64,9 @@
 .elemento:hover {
   background-color: blue;
   transition-delay: 1s;
+}
+.fast-information-box{
+  display: flex;
+  flex-direction: row;
 }
 
