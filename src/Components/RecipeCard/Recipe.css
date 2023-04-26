@@ -3,7 +3,8 @@
     flex-direction: row;
     width: fit-content;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
-    margin-right: 30px;
+    margin-right: 200px;
+    margin-bottom: 100px;
 }
 
 .recipe-image {
@@ -27,12 +28,16 @@
     opacity: 0;
     height: 200px;
     padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
     
 }
 .recipe-box:hover>.card-information-box {
+    
     opacity: 1;
-    width: 250px;
+    width: 300px;
     height: 200px;
     
 
@@ -47,26 +52,33 @@
     
 }
 
-.recipe-card-title{
-  margin: 15px 0 0 0;
+.recipe-card-title-normal{
+  margin: 5px 0 0 0;
   font-family: 'Do Hyeon';
   color: #023F2D;
   font-size: 22px;
 }
 
-
-
-.elemento {
-  background-color: red;
-  transition: background-color 1s;
+.recipe-card-title-big{
+  margin: 5px 0 0 0;
+  font-family: 'Do Hyeon';
+  color: #023F2D;
+  font-size: 15px;
 }
 
-.elemento:hover {
-  background-color: blue;
-  transition-delay: 1s;
-}
 .fast-information-box{
   display: flex;
   flex-direction: row;
+}
+.summary-box{
+  margin-right:10px;
+  display: none;
+}
+.recipe-box:hover>.card-information-box>.card-information>.summary-box{
+  display: block;
+}
+.summary-text{
+  font-family: 'Do Hyeon';
+  font-size: 15px;
 }
 
